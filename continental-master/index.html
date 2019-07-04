@@ -1,0 +1,267 @@
+<html>
+<head>
+	<title>Proyecto continental</title>
+<link rel="stylesheet" href="css/bootstrap.min.css" >
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="css/tabla.css">
+
+</head>
+<body>
+
+<div class="container-fluid m-0 p-0">
+	<!--Inicia barra de navegación -->
+	<nav class="navbar navbar-expand-sm navbar-light bg-orange m-0 p-0" id="nav-P">
+	  <a class="navbar-brand" href="index.html"><img src="img/logo.jpg"></a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav ml-auto">
+	      <li class="nav-item mr-5">
+	        <a class="nav-link active" href="index.html"><h6>Inicio</h6></a>
+	      </li>
+	      <li class="nav-item mr-5">
+	      	<button type="button" class="btn bg-orange" data-toggle="modal" data-target="#modalFallas">
+			  Nueva falla
+			</button>
+	        <!--<a class="nav-link" href="form.html"><h6>Registrar falla</h6></a> -->
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
+
+<!--Inicia portada -->
+
+	<div class="row d-flex justify-content-center buscador parallax m-0 p-0">
+		<div class="col-5 bg-orange-light rounded  my-auto p-4">
+			
+				<div class="row d-fex">
+					<form class="form-inline w-100 mx-auto mb-0">
+							<div class="col-5">
+								  <div class="input-group ">
+								    <div class="input-group-prepend">
+								      <div class="input-group-text">Linea</div>
+								    </div>
+								  	  <select id="Select" class="form-control">
+								        <option>CVSG'S</option>
+								        <option>Navistar</option>
+								        <option>Volvo</option>
+								        <option>Mack</option>
+								      </select>
+								  </div>
+							</div>
+							<div class="col-5">
+								  <div class="input-group ">
+								    <div class="input-group-prepend">
+								      <div class="input-group-text">Equipo</div>
+								    </div>
+								    <select id="Select" class="form-control">
+								        <option>Programación</option>
+								        <option>Pin Press</option>
+								        <option>Ensamble de LCD</option>
+								        <option>Dial Press</option>
+								        <option>Pointer Press</option>
+								        <option>Atornillado</option>
+								        <option>Vision</option>
+								        <option>End Control</option>
+								        <option>safe launch</option>
+								      </select>
+								  </div>
+							</div>
+					 	<div class="col-2 mr-auto">
+					  		<button type="button" class="btn bg-orange py-2" data-toggle="collapse" aria-expanded="false" aria-controls="demo" data-target="#demo">Buscar</button>
+					  	</div>	
+					 
+					</form>
+				 </div>
+		</div>
+	</div>
+</div>
+<!--Inicia tabla de información -->
+<div class="containter" >
+	<div class="row d-fex justify-content-center m-0 p-0">
+		<div class="col-8 collapse" id="demo">
+			<table class="table">
+				  <thead class="thead-dark">
+				    <tr>
+				      <th>fecha</th>
+				      <th>Nombre de falla</th>
+				      <th>Descripcion</th>
+				      <th>foto</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <td>1/05/19</td>
+				      <td>N. prueba 100</td>
+				      <td>se reinicia el plc</td>
+				      <td>4No incluye</td>
+				    </tr>
+				    <tr>
+				      <td>1/05/19</td>
+				      <td>N. prueba 100</td>
+				      <td>2se reinicia el plc</td>
+				      <td>2No incluye</td>
+				    </tr>
+				    <tr>
+				      <td>1/05/19</td>
+				      <td>N. prueba 100</td>
+				      <td>4se reinicia el plc</td>
+				      <td>3No incluye</td>
+				    </tr>
+				    <tr>
+				      <td>1/05/19</td>
+				      <td>N. prueba 100</td>
+				      <td>5se reinicia el plc</td>
+				      <td>1No incluye</td>
+				    </tr>
+				    
+				        
+				   
+				  </tbody>
+			</table>
+		</div>
+	</div>
+
+<!-- Modal -->
+<div class="modal fade" id="modalFallas" tabindex="3" role="dialog" aria-labelledby="modalFallasLabel" aria-hidden="true">
+  <div class="modal-dialog modalMaxWidth" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-orange d-fex justify-content-center">
+      	<div class="col-3 ml-auto p-0">
+       		 <h5 class="modal-title d-inline text-center" id="modalFallasLabel">Añadir nueva falla</h5>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <div class="row d-flex justify-content-center">
+		<div class="col-10">
+			<div class="row p-4 d-flex justify-content-center">
+				<div class="col">
+					<form class="form">
+						<div class="input-group mb-3">
+						    <div class="input-group-prepend">
+						      <div class="input-group-text">Numero de empleado</div>
+						    </div>
+						    <input type="text" class="form-control" id="numeroEmpleado" placeholder="Username">
+						  </div>
+						  <div class="input-group mb-3">
+						    <div class="input-group-prepend">
+						      <div class="input-group-text">Nombre de falla o numero de prueba</div>
+						    </div>
+						    <input type="text" class="form-control" id="falla" placeholder="Username">
+						  </div>
+						  <div class="row d-flex justify-content-between px-3">
+						  <div class="col-5 m-0 p-0">
+								  <div class="input-group mb-3">
+								    <div class="input-group-prepend">
+								      <div class="input-group-text">Linea</div>
+								    </div>
+								  	  <select id="Select" class="form-control">
+								        <option>CVSG'S</option>
+								        <option>Navistar</option>
+								        <option>Volvo</option>
+								        <option>Mack</option>
+								      </select>
+								  </div>
+							</div>
+							<div class="col-5 m-0 p-0">
+								  <div class="input-group mb-3">
+								    <div class="input-group-prepend">
+								      <div class="input-group-text">Equipo</div>
+								    </div>
+								    <select id="Select" class="form-control">
+								        <option>Programación</option>
+								        <option>Pin Press</option>
+								        <option>Ensamble de LCD</option>
+								        <option>Dial Press</option>
+								        <option>Pointer Press</option>
+								        <option>Atornillado</option>
+								        <option>Vision</option>
+								        <option>End Control</option>
+								        <option>safe launch</option>
+								      </select>
+								  </div>
+							</div>
+							</div>
+							<div class="col p-0">
+								<h6> Tipo de tecnologìa</h6>
+								<div class="row my-3">	
+									<div class="col-6">
+										<div class="custom-control custom-checkbox">
+										  <input class="custom-control-input" type="checkbox" value="" id="checkTest">
+										  <label class="custom-control-label" for="checkTest">
+										    TextExec
+										  </label>
+										</div>
+										<div class="custom-control custom-checkbox">
+										  <input class="custom-control-input" type="checkbox" value="" id="checkMcd">
+										  <label class="custom-control-label" for="checkMcd">
+										    MCD
+										  </label>
+										</div>
+										<div class="custom-control custom-checkbox">
+										  <input class="custom-control-input" type="checkbox" value="" id="checkAti">
+										  <label class="custom-control-label" for="checkAti">
+										    AtiScripter
+										  </label>
+										</div>
+									</div>
+									<div class="col-6">
+										<div class="custom-control custom-checkbox">
+										  <input class="custom-control-input" type="checkbox" value="" id="checkVector">
+										  <label class="custom-control-label" for="checkVector">
+										    VectorDriver
+										  </label>
+										</div>
+										<div class="custom-control custom-checkbox">
+										  <input class=" custom-control-input" type="checkbox" value="" id="checkVision">
+										  <label class="custom-control-label" for="checkVision">
+										    Servidor de visiòn
+										  </label>
+										</div>
+									</div>
+								</div>	
+							</div>
+							<div class="col p-0">
+								<h6>¿Se realizo un cambio de ingenieria?</h6>
+								<div class="row">
+									<div class="col">
+										<div class="custom-control custom-checkbox form-check-inline mr-3">
+										  <input class="custom-control-input" type="checkbox" id="checkIng" value="">
+										  <label class="custom-control-label" for="checkIng">Si</label>
+										</div>
+										
+									</div>	
+								</div>
+							</div>
+							<div class="col p-0">
+								<p class="text-normal">Descripción de la falla:</p>
+								<textarea name="message" class="textarea"></textarea>
+							</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/tabla.js"></script>
+
+</body>
+</html>

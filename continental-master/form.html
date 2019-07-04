@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+
+	<title>Proyecto pagina 2</title>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" >
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/icons.css">
+<link rel="stylesheet" href="css/modal.css">
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+<div class="container-fluid m-0 p-0">
+	<!--Inicia barra de navegación -->
+	<nav class="navbar navbar-expand-sm navbar-light bg-orange m-0 p-0" id="nav-P">
+	  <a class="navbar-brand" href="index.html"><img src="img/logo.jpg"></a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav ml-auto">
+	      <li class="nav-item mr-5">
+	        <a class="nav-link " href="index.html"><h6>Inicio</h6></a>
+	      </li>
+	      <li class="nav-item mr-5">
+	        <a class="nav-link active" href="#"><h6>Registrar falla</h6></a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
+	<!--finaliza barra de navegación -->
+	<div class="row mt-5 mb-0 pb-0 d-flex justify-content-center">
+		<div class="col-6 bg-orange mb-0 pb-0">
+			<h2 class="text-center">Registro de fallas</h2>
+		</div>	
+	</div>
+	<!--Inicia formulario -->
+	
+	<div class="row d-flex justify-content-center">
+		<div class="col-6 border-orange">
+			<div class="row p-4 d-flex justify-content-center">
+				<div class="col">
+					<form class="form">
+						<div class="input-group mb-3">
+						    <div class="input-group-prepend">
+						      <div class="input-group-text">Numero de empleado</div>
+						    </div>
+						    <input type="text" class="form-control" id="numeroEmpleado" placeholder="Username">
+						  </div>
+						  <div class="input-group mb-3">
+						    <div class="input-group-prepend">
+						      <div class="input-group-text">Nombre de falla o numero de prueba</div>
+						    </div>
+						    <input type="text" class="form-control" id="falla" placeholder="Username">
+						  </div>
+						  <div class="col p-0">
+								  <div class="input-group mb-3">
+								    <div class="input-group-prepend">
+								      <div class="input-group-text">Linea</div>
+								    </div>
+								  	  <select id="Select" class="form-control">
+								        <option>CVSG'S</option>
+								        <option>Navistar</option>
+								        <option>Volvo</option>
+								        <option>Mack</option>
+								      </select>
+								  </div>
+							</div>
+							<div class="col p-0">
+								  <div class="input-group mb-3">
+								    <div class="input-group-prepend">
+								      <div class="input-group-text">Equipo</div>
+								    </div>
+								    <select id="Select" class="form-control">
+								        <option>Programación</option>
+								        <option>Pin Press</option>
+								        <option>Ensamble de LCD</option>
+								        <option>Dial Press</option>
+								        <option>Pointer Press</option>
+								        <option>Atornillado</option>
+								        <option>Vision</option>
+								        <option>End Control</option>
+								        <option>safe launch</option>
+								      </select>
+								  </div>
+							</div>
+							<div class="col p-0">
+								<h6> Tipo de tecnologìa</h6>
+								<div class="row my-3">	
+									<div class="col-6">
+										<div class="custom-control custom-checkbox">
+										  <input class="custom-control-input" type="checkbox" value="" id="checkTest">
+										  <label class="custom-control-label" for="checkTest">
+										    TextExec
+										  </label>
+										</div>
+										<div class="custom-control custom-checkbox">
+										  <input class="custom-control-input" type="checkbox" value="" id="checkMcd">
+										  <label class="custom-control-label" for="checkMcd">
+										    MCD
+										  </label>
+										</div>
+										<div class="custom-control custom-checkbox">
+										  <input class="custom-control-input" type="checkbox" value="" id="checkAti">
+										  <label class="custom-control-label" for="checkAti">
+										    AtiScripter
+										  </label>
+										</div>
+									</div>
+									<div class="col-6">
+										<div class="custom-control custom-checkbox">
+										  <input class="custom-control-input" type="checkbox" value="" id="checkVector">
+										  <label class="custom-control-label" for="checkVector">
+										    VectorDriver
+										  </label>
+										</div>
+										<div class="custom-control custom-checkbox">
+										  <input class=" custom-control-input" type="checkbox" value="" id="checkVision">
+										  <label class="custom-control-label" for="checkVision">
+										    Servidor de visiòn
+										  </label>
+										</div>
+									</div>
+								</div>	
+							</div>
+							<div class="col p-0">
+								<h6>¿Se realizo un cambio de ingenieria?</h6>
+								<div class="row">
+									<div class="col">
+										<div class="custom-control custom-checkbox form-check-inline mr-3">
+										  <input class="custom-control-input" type="checkbox" id="checkIng" value="">
+										  <label class="custom-control-label" for="checkIng">Si</label>
+										</div>
+										
+									</div>	
+								</div>
+							</div>
+							<div class="col p-0">
+								<p class="text-normal">Descripción de la falla:</p>
+								<textarea name="message" class="textarea">
+								
+								</textarea>
+							</div>
+							<div class="col my-4">
+								<section id="Images" class="images-cards">
+					                <form action="upload.php" method="post" enctype="multipart/form-data">
+					                    <div class="row">
+					                        <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-12" id="add-photo-container">
+					                            <div class="add-new-photo first" id="add-photo">
+					                                <span><i class="icon-camera"></i></span>
+					                            </div>
+					                            <input type="file" multiple id="add-new-photo" name="images[]">
+					                        </div>
+					                    </div>
+					                </form> 
+					            </section>
+							</div>
+						  
+							<div class="col-1 ml-auto p-0">
+						  		<button type="submit" class="btn bg-orange mb-2" id="enviar-form">Enviar</button>
+						   </div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/modal.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+</html>
